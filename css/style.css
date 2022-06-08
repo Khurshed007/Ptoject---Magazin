@@ -1,0 +1,247 @@
+body{
+margin:0px;
+padding:0px;/*убрал отступы*/
+background-image:url(../images/bg2.png); 
+background-size:cover;
+background-repeat:no-repeat;
+background-attachment:fixed;
+}
+*{
+	box-sizing:border-box;
+}
+ul{
+	list-style:none;/*убрал числа от ul*/
+}
+a{
+	text-decoration:none;
+}
+.navigation-container{
+	width:100%;
+	height:60px;
+	background-color:red;
+	position:fixed;/*элемент будет передвигаться вместе с курсором*/
+    top:0px;
+}
+
+.navigation-content{
+	height:60px;
+	margin:0px 12%;
+	display:flex;
+	align-items:center;/*передвишает элементы в центр*/
+    justify-content: space-between;/*дает пробелы среди несколько элементов*/
+}
+.menu ul{
+	display:flex;/*ставит элементы сбоку друг у друга*/
+}
+.menu ul li a{
+	padding:0px 30px;
+	font-family:calibri;
+	font-weight:bold;
+	color:#FFFFFF;
+	border-left:3px solid #e54c51;}
+.cart{
+	display: flex;
+	align-items: center;
+	font-family: calibri;
+	font-weight: bold;
+
+}
+.cart a{
+	color:white;
+	margin:0px 10px;
+}
+.whats-new{
+	display: flex;
+	justify-content: center;
+	margin:7% 0px 20px 0px;
+	align-items: center;
+}
+.content{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+}
+.first-row{
+	display:flex;
+}
+.new{
+	width:540px;
+	height:320px;
+	margin:10px;
+	background-color:grey;
+}
+.search,.order{
+	width:540px;
+	height:150px;
+	margin:10px;
+	background-color: grey;
+	display:flex;
+	flex-direction:column;
+}
+
+
+.find{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-content:center;
+}
+.search p{
+	color:white;
+	font-size:30px;
+	font-family:calibri;
+	font-weight:bold;
+	line-height:0px;
+}
+.food-one,.food-two,.food-three{
+	width:354px;
+	height:350px;
+	margin: 10px;
+	background-color: grey;
+}
+.second-row{
+	display:flex;
+}
+.flavor,.breakfast{
+	width:540px;
+	height:180px;
+	margin:10px;
+	background-color:#b1b1b1;
+}
+.third-row{
+	display:flex;
+}
+.new p{
+	color:white;
+	line-height:50px;
+	padding:0px;
+	margin:0px;
+}
+.new p:nth-child(1) {
+	font-size: 40px;
+	font-family: calibri;
+	font-weight:bold;
+}
+.new p:nth-child(2){
+	font-size:30px;
+	font-family:mariad pro;
+}
+.order{
+	justify-content:center;
+	text-align: center;
+	font-size:40px;
+	font-weight:bold;
+
+}
+.new{
+	display:flex;
+	justify-content: center;
+	flex-direction:column;
+	padding:40px;
+}
+
+.new button{
+	   width:120px;
+		height:35px;
+		border-radius:10px;
+		background-color:#ea272d;
+		text-align:center;
+		font-family:calibri;
+		font-weight:400;
+		color:#FFFFFF;
+		font-size:16px;
+		border:none;
+		box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+		outline:none;/**/
+	}
+
+button:active{
+	transform:scale(1.1);
+	transition: all ease 0.5s;
+}
+
+.new{
+	background-image:url(../images/new.png);
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+.text{
+	background-color: white;
+	border-radius:20px;
+	width:250px;
+	height:35px;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+.text input[type=search]{
+	border:none;
+	background-color: transparent;
+	color:grey;
+	text-align:center;
+	outline:none;
+}
+.text button{
+	height:35px;
+	width:100px;
+	border:none;
+	color: black;
+	font-family: calibris;
+	font-weight: bold;
+	outline:none;
+	border-radius:0px 20px 20px 0px;
+}
+.text button:hover{
+	color:red;
+	transition:all ease 0.5s;
+
+}
+.search{
+	background-image:url(../images/find.png);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.order a{
+	font-family: calibri;
+	font-weight: bold;
+	color:white;
+	font-size: 40px;
+	text-shadow: 2px 2px 12px rgba(0,0,0,0.1)
+}
+.order{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.name p{
+	font-family: calibri;
+	color:white;
+	line-height:40px;
+	margin:0px;
+	padding:0px;
+}
+.name p:nth-child(1){
+	font-weight:bold;
+	font-size:40px;
+}
+.name p:nth-child(2){
+	font-weight:200;
+	font-size:30px;
+}
+.food-one,.food-two,.food-three{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	padding:5%;
+}
+.price button {
+	color: white;
+	background-color: transparent;
+	background-color:red;
+	width:70px;
+	height:35px;
+	outline:none;
+	border-radius:20px;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2)
+}
